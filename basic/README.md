@@ -2,23 +2,44 @@
 
 This project is an introductory Python exercise developed during the initial programming module of my Data Science master’s program.
 
-The objective was to build an interactive game while practicing fundamental programming concepts and basic modularization.
+The objective was to build an interactive number guessing game while practicing fundamental programming concepts and basic modularization.
 
-## Project structure
+---
 
-- A Jupyter Notebook that runs the game and manages user interaction
-- A custom Python module containing the core game logic and helper functions
-- The notebook imports the module to separate logic from execution, as required by the assignment
+## Project Structure
 
-## Concepts practiced
+The project is composed of two main files located in the same directory:
 
-- Control flow (if / else)
-- Loops
-- Functions
-- Input validation
-- Modular code (custom Python module)
-- Basic file handling
+### 1️⃣ Adivina_El_Numero_Carlos_Lara.ipynb
 
-## Context
+This Jupyter Notebook manages:
 
-This project was designed as a learning-oriented academic exercise and reflects the structure required by the course.
+- User interaction
+- Menu navigation
+- Game mode selection
+- Execution flow of the program
+
+The notebook serves as the execution layer of the project.
+
+---
+
+### 2️⃣ Funciones.py
+
+This Python file contains the core game logic, including:
+
+- Game modes (single-player and two-player)
+- Difficulty handling
+- Scoring system
+- Statistics tracking
+- Helper functions used by the game
+
+It acts as a custom Python module that separates logic from execution.
+
+---
+
+## How the files interact
+
+The notebook imports the module using:
+
+```python
+import Funciones
